@@ -1,0 +1,9 @@
+import { NextConfig } from "next"
+import createNextIntlPlugin from "next-intl/plugin"
+
+const withNextIntl = createNextIntlPlugin()
+
+const config: NextConfig = {
+  transpilePackages: ["@workspace/ui"],
+}
+export default withNextIntl(config)

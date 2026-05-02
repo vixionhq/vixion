@@ -1,0 +1,479 @@
+{
+  "LocaleLayout": {
+    "title": "Vixion"
+  },
+  "Manifest": {
+    "name": "Vixion"
+  },
+  "Home": {
+    "hero": {
+      "sysRef": "V1.0_2026",
+      "technicalLabel": "MISSION_CORE_INITIÉE",
+      "title": "Automatisez ce qui ralentit votre entreprise.",
+      "description": "Vixion aide les entreprises africaines à structurer leurs données, automatiser leurs opérations et déployer des systèmes IA adaptés à leurs réalités."
+    },
+    "heroStats": [
+      {
+        "metric": "Automatisation",
+        "label": "Jusqu’à 75% des tâches opérationnelles automatisées"
+      },
+      {
+        "metric": "Efficacité",
+        "label": "Réduction significative des délais et des erreurs"
+      },
+      {
+        "metric": "Déploiement",
+        "label": "Systèmes conçus pour les environnements africains"
+      }
+    ],
+    "services": [
+      {
+        "id": "001_AUT",
+        "title": "Automatisation des processus",
+        "description": "Nous transformons vos flux manuels en systèmes automatisés fiables et scalables.",
+        "features": [
+          "Orchestration des flux",
+          "Connexion des outils",
+          "Intégration API"
+        ]
+      },
+      {
+        "id": "002_AGNT",
+        "title": "Agents IA",
+        "description": "Des agents intelligents pour gérer les interactions clients, le support et les opérations internes."
+      },
+      {
+        "id": "003_DOC",
+        "title": "Intelligence documentaire",
+        "description": "Extraction et structuration des données issues de documents (factures, formulaires, contrats)."
+      },
+      {
+        "id": "004_ANL",
+        "title": "Analyse et décision",
+        "description": "Des systèmes qui transforment vos données en recommandations actionnables."
+      }
+    ],
+    "mission": {
+      "technicalLabel": "PILIER_01",
+      "title": "Conçu pour les réalités africaines.",
+      "description": "Les solutions standards ne tiennent pas compte des contraintes locales. Vixion est conçu pour fonctionner dans des environnements à connectivité variable, avec des systèmes robustes, adaptables et orientés performance réelle.",
+      "protocolTitle": "PROTOCOLES_SYSTÈME"
+    },
+    "cta": {
+      "technicalLabel": "CONN_SÉCURISÉE_ÉTABLIE",
+      "title": "Prêt à structurer et automatiser votre entreprise ?",
+      "primaryButton": "Parler à notre équipe",
+      "secondaryButton": "Découvrir l’approche"
+    }
+  },
+  "Nav": {
+    "solutions": "Solutions",
+    "framework": "Approche",
+    "services": "Services",
+    "contact": "Contact",
+    "getStarted": "COMMENCER"
+  },
+  "Footer": {
+    "copyright": "2026 VIXION // TOUS SYSTÈMES OPÉRATIONNELS",
+    "institutional": "INSTITUTIONNEL",
+    "terminal": "TERMINAL",
+    "encryptedComms": "COMMS_CHIFFRÉES",
+    "products": "Produits",
+    "about": "À propos",
+    "design": "Design"
+  },
+  "Solutions": {
+    "framing": {
+      "title": "L'IA ne commence pas par l'automatisation. Elle commence par les données.",
+      "description": "Nous transformons les données fragmentées des entreprises en systèmes structurés prêts pour l'IA qui alimentent l'automatisation, la prise de décision et l'efficacité opérationnelle."
+    },
+    "pillars": [
+      {
+        "label": "CAPTURER",
+        "description": "Collecter les données de chaque système, flux de travail et interaction."
+      },
+      {
+        "label": "STRUCTURER",
+        "description": "Standardiser et organiser les données dans des formats utilisables."
+      },
+      {
+        "label": "ACTIVER",
+        "description": "Déployer les systèmes IA et l'automatisation sur des données structurées."
+      }
+    ],
+    "cards": {
+      "processAutomation": {
+        "label": "AUTOMATISATION DES PROCESSUS",
+        "title": "Flux de travail hérités vers moteurs autonomes",
+        "description": "Automatiser les opérations répétitives dans la finance, les opérations et les flux de travail internes. Nous cartographions vos processus existants et déployons des systèmes qui s'exécutent plus rapidement, réduisent les erreurs et abaissent les coûts opérationnels.",
+        "reduction": "RÉDUCTION DE 75% DES OPEX"
+      },
+      "smartAiAgents": {
+        "label": "ASSISTANTS IA INTELLIGENTS",
+        "title": "Coprocesseurs neuronaux",
+        "description": "Déployer des agents IA qui gèrent les interactions clients, les requêtes internes et le support à la décision en temps réel."
+      },
+      "documentIntelligence": {
+        "label": "INTELLIGENCE DOCUMENTAIRE",
+        "title": "OCR durci & Vision",
+        "description": "Convertir les documents non structurés en données structurées utilisables instantanément — des factures et rapports aux notes manuscrites."
+      },
+      "knowledgeGraph": {
+        "label": "CONNAISSANCE UNIFIÉE",
+        "title": "Une source unique de vérité",
+        "description": "Centraliser la connaissance de l’entreprise entre documents, messages et outils pour permettre aux équipes et aux systèmes IA d’accéder au bon contexte en temps réel."
+      },
+      "decisionIntelligence": {
+        "label": "INTELLIGENCE DÉCISIONNELLE",
+        "title": "Décisions guidées par les données",
+        "description": "Transformer les données et événements métier en recommandations claires, priorités et prochaines actions pour les équipes et la direction."
+      },
+      "systemIntegration": {
+        "label": "INTÉGRATION SYSTÈME",
+        "title": "Des systèmes qui fonctionnent ensemble",
+        "description": "Connecter CRM, ERP, tableurs et outils métiers pour éliminer les silos et créer une base opérationnelle prête pour l’automatisation."
+      }
+    },
+    "grid": {
+      "label": "MODULES_SOLUTION_06",
+      "title": "Des systèmes modulaires pour le travail sous la surface.",
+      "description": "Chaque module peut fonctionner seul ou se connecter à une couche opérationnelle plus large entre données, décisions et exécution."
+    },
+    "bridge": {
+      "title": "Livré via nos Services d'implémentation IA",
+      "link": "Explorer les Services"
+    },
+    "framework": {
+      "title": "Basé sur notre Approche de préparation IA",
+      "link": "Voir Notre Approche →"
+    }
+  },
+  "Common": {
+    "requestConsultation": "Demander une consultation",
+    "exploreFramework": "Explorer le cadre"
+  },
+  "Services": {
+    "hero": {
+      "sysLoc": "CORE_DC_01",
+      "latency": "14ms",
+      "status": "OPTIMAL",
+      "manifest": "MANIFESTE_DE_SERVICE_VIXION",
+      "title": "Pipeline de Transformation Opérationnelle",
+      "description": "Nous préparons votre entreprise, déployons des systèmes intelligents et les optimisons en continu pour améliorer la performance, réduire les coûts et soutenir votre croissance."
+    },
+    "heroStats": [
+      { "label": "Processus Automatisés", "value": "75%+" },
+      { "label": "Efficacité Opérationnelle", "value": "+30%" },
+      { "label": "Réduction des Coûts", "value": "-25%" }
+    ],
+    "features": [
+      {
+        "title": "Fondations d'abord.",
+        "description": "Données, outils et flux de travail structurés avant toute automatisation en production."
+      },
+      {
+        "title": "Déploiement sans friction.",
+        "description": "Des systèmes IA modulaires connectés aux points clés de vos opérations."
+      },
+      {
+        "title": "Optimisation continue.",
+        "description": "Surveillance, prompts, coûts et performances ajustés à mesure que votre activité évolue."
+      }
+    ],
+    "serviceRail": [
+      {
+        "title": "Préparation IA",
+        "description": "Audit des données, des outils et des flux de travail pour construire une base solide prête pour l’IA."
+      },
+      {
+        "title": "Systèmes IA & Automatisation",
+        "description": "Déploiement d’agents IA, de workflows automatisés et de systèmes intelligents au cœur de vos opérations."
+      }
+    ],
+    "capabilities": [
+      {
+        "icon": "database",
+        "title": "Audit de Données",
+        "description": "Analyser et structurer votre base de données"
+      },
+      {
+        "icon": "hub",
+        "title": "Automatisation des Flux",
+        "description": "Connecter les systèmes et éliminer les tâches manuelles"
+      },
+      {
+        "icon": "psychology",
+        "title": "Agents IA",
+        "description": "Déployer des agents pour les ventes, le support et les opérations"
+      },
+      {
+        "icon": "description",
+        "title": "Intelligence Documentaire",
+        "description": "Extraire et structurer les données issues des documents"
+      },
+      {
+        "icon": "memory",
+        "title": "Systèmes RAG",
+        "description": "Permettre à l’IA d’accéder à votre connaissance interne"
+      },
+      {
+        "icon": "trending_up",
+        "title": "Systèmes de Vente",
+        "description": "Automatiser et optimiser votre pipeline commercial"
+      },
+      {
+        "icon": "monitoring",
+        "title": "Monitoring",
+        "description": "Suivre les performances et le comportement des systèmes"
+      },
+      {
+        "icon": "savings",
+        "title": "Optimisation des Coûts",
+        "description": "Réduire les coûts opérationnels et techniques"
+      }
+    ],
+    "bottomCards": [
+      {
+        "title": "Croître avec Confiance",
+        "description": "Intégrez l’automatisation dans un modèle opérationnel conçu pour une croissance durable.",
+        "command": "$ vixion scale --regional"
+      },
+      {
+        "title": "Vixion AI Ops",
+        "description": "Suivez les performances en temps réel, améliorez les prompts et réduisez les coûts depuis une interface unifiée.",
+        "command": "$ vixion optimize --loop-active"
+      },
+      {
+        "title": "Déploiement Sécurisé",
+        "description": "Déployez des systèmes robustes avec observabilité, mécanismes de repli et accès contrôlé.",
+        "command": "$ vixion deploy --secure"
+      }
+    ],
+    "cta": { "button": "Auditer Vos Flux", "providers": "+ 16 intégrations" },
+    "systemOverview": {
+      "label": "APERÇU_SYSTÈME_V04",
+      "title": "Système Connecté"
+    }
+  },
+  "Framework": {
+    "hero": {
+      "method": "DONNÉES_D_ABORD",
+      "readiness": "VARIABLE",
+      "output": "SYSTÈME_IA",
+      "label": "NOYAU_DU_CADRE_01",
+      "title": "Approche de Préparation IA",
+      "description": "L'IA n’échoue pas à cause des modèles. Elle échoue parce que les entreprises ne sont pas structurées pour l’exploiter. Nous transformons des opérations fragmentées en systèmes prêts pour l’IA."
+    },
+    "corePrinciple": {
+      "label": "PRINCIPE_CENTRAL",
+      "title": "Sans données, pas d’IA. Sans IA, pas d’automatisation.",
+      "cards": [
+        "L'IA dépend de données accessibles et structurées.",
+        "La plupart des entreprises n'ont pas les fondations nécessaires.",
+        "L'automatisation sans structure crée du chaos opérationnel."
+      ]
+    },
+    "dataCategories": [
+      {
+        "title": "Données Opérationnelles",
+        "description": "Bases de données, logs, APIs"
+      },
+      {
+        "title": "Données de Communication",
+        "description": "Emails, WhatsApp, réunions"
+      },
+      {
+        "title": "Données de Connaissance",
+        "description": "Documents, rapports, savoir interne"
+      },
+      {
+        "title": "Données Comportementales",
+        "description": "Activité utilisateur, analytics"
+      },
+      {
+        "title": "Données de Processus",
+        "description": "Flux, décisions, tickets"
+      }
+    ],
+    "dataSurface": {
+      "label": "SURFACE_DE_DONNÉES",
+      "title": "Ce que signifient réellement les données d’entreprise",
+      "description": "Chaque entreprise produit déjà des données. Le problème est que la plupart sont invisibles, dispersées ou inutilisables."
+    },
+    "maturityLevels": [
+      {
+        "level": "NIVEAU_01",
+        "title": "Pas d’Infrastructure Numérique",
+        "signals": [
+          "Fonctionne sur WhatsApp, papier et processus verbaux",
+          "Aucune donnée structurée",
+          "Peu ou pas de documentation"
+        ],
+        "goal": "Numériser et centraliser l'information"
+      },
+      {
+        "level": "NIVEAU_02",
+        "title": "Systèmes Déconnectés",
+        "signals": [
+          "Utilise des outils mais données dispersées",
+          "Peu ou pas d'intégrations",
+          "Flux de travail majoritairement manuels"
+        ],
+        "goal": "Connecter les systèmes et standardiser les flux"
+      },
+      {
+        "level": "NIVEAU_03",
+        "title": "Organisation Prête pour l'IA",
+        "signals": [
+          "Données structurées",
+          "Systèmes connectés",
+          "Flux documentés",
+          "Prête pour le déploiement IA"
+        ],
+        "goal": "Activer l’automatisation et les systèmes IA"
+      }
+    ],
+    "maturity": {
+      "label": "INDEX_DE_MATURITÉ",
+      "title": "Niveaux de Maturité IA",
+      "description": "L'objectif n'est pas de paraître avancé, mais d’identifier précisément ce qui doit être corrigé avant que l’IA devienne réellement utile."
+    },
+    "method": {
+      "label": "MÉTHODE_VIXION",
+      "title": "La Méthode Vixion",
+      "description": "Une approche structurée pour transformer des opérations fragmentées en infrastructure prête pour l’IA."
+    },
+    "methodSteps": [
+      {
+        "step": "ÉTAPE_01",
+        "title": "Capturer",
+        "points": [
+          "Enregistrer réunions, flux et décisions",
+          "Éliminer la perte de données",
+          "Rendre l'information accessible"
+        ]
+      },
+      {
+        "step": "ÉTAPE_02",
+        "title": "Structurer",
+        "points": [
+          "Standardiser les formats",
+          "Introduire des modèles",
+          "Organiser les flux de travail"
+        ]
+      },
+      {
+        "step": "ÉTAPE_03",
+        "title": "Activer",
+        "points": [
+          "Construire des pipelines RAG",
+          "Déployer des agents IA",
+          "Automatiser les opérations"
+        ]
+      }
+    ],
+    "dataLayer": {
+      "label": "COUCHE_UNIFIÉE",
+      "title": "Couche de Données Unifiée",
+      "description": "Le cadre transforme l’activité de l’entreprise en données exploitables que l’IA peut comprendre, rechercher et activer."
+    },
+    "unifiedLayer": [
+      {
+        "title": "Ingestion",
+        "description": "Collecter les données depuis vos outils existants."
+      },
+      {
+        "title": "Embedding",
+        "description": "Transformer les données en représentations compréhensibles pour l’IA."
+      },
+      {
+        "title": "Stockage",
+        "description": "Conserver les données dans des bases vectorielles pour une recherche intelligente."
+      }
+    ],
+    "stack": {
+      "label": "TECHNOLOGIES_OPTIONNELLES",
+      "title": "Stack Technique"
+    },
+    "stackItems": [
+      { "layer": "Communication", "tools": "Slack / Discord" },
+      { "layer": "Données", "tools": "PostgreSQL / Supabase" },
+      { "layer": "Base Vectorielle", "tools": "Pinecone / pgvector" },
+      { "layer": "Automatisation", "tools": "n8n / Make" }
+    ],
+    "cta": {
+      "label": "PASSERELLE_D'EXÉCUTION",
+      "title": "De l'Approche à l’Exécution",
+      "description": "Ce cadre n’est pas théorique. Il alimente chaque système que nous concevons et déployons.",
+      "solutionsLink": "Explorer les Solutions",
+      "servicesLink": "Voir les Services"
+    }
+  },
+  "Contact": {
+    "hero": {
+      "id": "VX-001/CONTACT",
+      "title": "ÉTABLIR LE CONTACT // LIGNE_SÉCURISÉE_INITIÉE",
+      "description": "Interface d'intelligence architecturale active. Soumettez des spécifications techniques ou des requêtes terminal via le protocole chiffré ci-dessous."
+    },
+    "form": {
+      "module": "PROTOCOLE_D'INTERROGATION",
+      "name": {
+        "label": "NOM_SYSTÈME // IDENTIFIANT",
+        "placeholder": "ENTREZ_LE_NOM..."
+      },
+      "email": {
+        "label": "ID_NÉURAL // EMAIL",
+        "placeholder": "ADRESSE@NOEUD.SYSTÈME"
+      },
+      "message": {
+        "label": "DONNÉES_TRANSMISSION // MESSAGE",
+        "placeholder": "SPÉCIFICATIONS_ENTRÉE..."
+      },
+      "button": "INITIALISER_TRANSMISSION"
+    },
+    "locations": {
+      "label": "01_RÉSEAU",
+      "title": "RÉSEAU_GLOBAL_NŒUDS",
+      "nodes": [
+        {
+          "coords": "[40.7128° N, 74.0060° W]",
+          "title": "NOEUD_NEW_YORK",
+          "address": "601 W 26TH ST, NY 10001"
+        },
+        {
+          "coords": "[35.6762° N, 139.6503° E]",
+          "title": "TERMINAL_TOKYO",
+          "address": "QUARTIER_SHIBUYA, T3-92"
+        },
+        {
+          "coords": "[52.5200° N, 13.4050° E]",
+          "title": "HUB_BERLIN",
+          "address": "MITTE COMPLEX B-14"
+        }
+      ]
+    },
+    "security": {
+      "label": "02_SÉCURITÉ",
+      "title": "PROTOCOLES_SÉCURITÉ",
+      "encryption": {
+        "label": "STATUT_CHIFFREMENT",
+        "value": "ACTIF"
+      },
+      "protocol": {
+        "label": "PROTOCOLE",
+        "value": "AES-512_X"
+      },
+      "identity": {
+        "label": "VÉRIFICATION_IDENTITÉ",
+        "value": "MULTI_COUCHES"
+      }
+    },
+    "stats": {
+      "uptime": "TEMPS_DE_FONCTIONNEMENT",
+      "nodes": "NOEUDS_ACTIFS",
+      "processing": "TRAITEMENT_IA",
+      "latency": "LATENCE",
+      "values": ["99.998%", "14.209", "OPTIMAL", "2.4ms"]
+    }
+  }
+}

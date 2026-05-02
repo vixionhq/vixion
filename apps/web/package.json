@@ -14,11 +14,13 @@
   "dependencies": {
     "@hugeicons/core-free-icons": "^4.1.1",
     "@hugeicons/react": "^1.1.6",
-    "@workspace/ui": "workspace:*",
+    "@vix/ui": "workspace:*",
     "next": "16.1.6",
+    "next-intl": "^4.11.0",
     "next-themes": "^0.4.6",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "resend": "^6.12.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.18",

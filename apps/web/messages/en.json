@@ -1,0 +1,476 @@
+{
+  "LocaleLayout": {
+    "title": "VIXION"
+  },
+  "Manifest": {
+    "name": "VIXION"
+  },
+  "Home": {
+    "hero": {
+      "sysRef": "V1.0_2024",
+      "technicalLabel": "CORE_MISSION_INITIATED",
+      "title": "WHERE VISION MEETS ACTION.",
+      "description": "VIXION helps African businesses automate everything that slows them down. High-fidelity architectural intelligence built for the continent's unique industrial scale."
+    },
+    "heroStats": [
+      {
+        "metric": "LATENCY / 0.04ms",
+        "label": "Global response architecture optimized for sub-Saharan data frameworks."
+      },
+      {
+        "metric": "UPTIME / 99.9%",
+        "label": "Systems redundancy layer active across all regional clusters."
+      },
+      {
+        "metric": "INTEGRITY / VERIFIED",
+        "label": "Blockchain-secured document verification protocols as standard."
+      }
+    ],
+    "services": [
+      {
+        "id": "001_AUT",
+        "title": "AUTOMATION SERVICES",
+        "description": "Stop doing manually what can be automated. We engineer autonomous workflows that handle repetitive operations with zero-variance precision.",
+        "features": [
+          "WORKFLOW ORCHESTRATION",
+          "LEGACY SYSTEM SYNC",
+          "API_BRIDGE INTEGRATION"
+        ]
+      },
+      {
+        "id": "002_AGNT",
+        "title": "AI ASSISTANTS",
+        "description": "Smart agents for your business intelligence."
+      },
+      {
+        "id": "003_DOC",
+        "title": "DOCUMENT AUTOMATION",
+        "description": "OCR for invoices, forms, and contracts."
+      },
+      {
+        "id": "004_ANL",
+        "title": "PREDICTIVE ANALYTICS",
+        "description": "Neural-net forecasting to see trends before they materialize in the market."
+      }
+    ],
+    "mission": {
+      "technicalLabel": "PILLAR_01",
+      "title": "AFRICAN CONTEXT FIRST.",
+      "description": "Standard automation models fail when faced with local infrastructure realities. VIXION is built ground-up to handle high-latency environments and intermittent connectivity. Our intelligence layers are trained on regional data sets, ensuring that predictive models account for local market volatility and logistical nuances.",
+      "protocolTitle": "STITCH_SYS_PROTOCOLS"
+    },
+    "cta": {
+      "technicalLabel": "SECURE_CONN_ESTABLISHED",
+      "title": "READY TO DEPLOY?",
+      "primaryButton": "REQUEST CONSULTATION",
+      "secondaryButton": "EXPLORE FRAMEWORK"
+    }
+  },
+  "Nav": {
+    "solutions": "Solutions",
+    "framework": "Framework",
+    "services": "Services",
+    "contact": "Contact",
+    "getStarted": "GET_STARTED"
+  },
+  "Footer": {
+    "copyright": "2026 VIXION // ALL SYSTEMS OPERATIONAL",
+    "institutional": "INSTITUTIONAL",
+    "terminal": "TERMINAL",
+    "encryptedComms": "ENCRYPTED_COMMS",
+    "products": "Products",
+    "about": "About",
+    "design": "Design"
+  },
+  "Solutions": {
+    "framing": {
+      "title": "AI doesn't start with automation. It starts with data.",
+      "description": "We transform fragmented company data into structured, AI-ready systems that power automation, decision-making, and operational efficiency."
+    },
+    "pillars": [
+      {
+        "label": "CAPTURE",
+        "description": "Collect data from every system, workflow, and interaction."
+      },
+      {
+        "label": "STRUCTURE",
+        "description": "Standardize and organize data into usable formats."
+      },
+      {
+        "label": "ACTIVATE",
+        "description": "Deploy AI systems and automation on top of structured data."
+      }
+    ],
+    "cards": {
+      "processAutomation": {
+        "label": "PROCESS AUTOMATION",
+        "title": "Legacy Workflows to Autonomous Engines",
+        "description": "Automate repetitive operations across finance, operations, and internal workflows. We map your existing processes and deploy systems that execute faster, reduce errors, and lower operational costs.",
+        "reduction": "75% REDUCTION IN OPEX"
+      },
+      "smartAiAgents": {
+        "label": "SMART AI AGENTS",
+        "title": "Neural Co-Processors",
+        "description": "Deploy AI agents that handle customer interactions, internal queries, and decision support in real time."
+      },
+      "documentIntelligence": {
+        "label": "DOCUMENT INTELLIGENCE",
+        "title": "Hardened OCR & Vision",
+        "description": "Convert unstructured documents into structured, usable data instantly — from invoices and reports to handwritten records."
+      },
+      "knowledgeGraph": {
+        "label": "KNOWLEDGE GRAPH",
+        "title": "Connected Memory for Teams",
+        "description": "Unify operational knowledge across documents, messages, tools, and databases so AI systems can retrieve the right context when it matters."
+      },
+      "decisionIntelligence": {
+        "label": "DECISION INTELLIGENCE",
+        "title": "Signals That Move Work",
+        "description": "Turn live business events into ranked recommendations, escalation paths, and next-best actions for operators and leadership."
+      },
+      "systemIntegration": {
+        "label": "SYSTEM INTEGRATION",
+        "title": "One Layer Across Every Tool",
+        "description": "Connect CRMs, ERPs, spreadsheets, communication tools, and custom systems into one automation-ready operating surface."
+      }
+    },
+    "grid": {
+      "label": "SOLUTION_MODULES_06",
+      "title": "Modular systems for the work beneath the surface.",
+      "description": "Each module can run independently or connect into a wider operating layer across data, decisions, and execution."
+    },
+    "bridge": {
+      "title": "Delivered through our AI Implementation Services",
+      "link": "Explore Services"
+    },
+    "framework": {
+      "title": "Built on our AI Readiness Framework",
+      "link": "View Framework →"
+    }
+  },
+  "Common": {
+    "requestConsultation": "Request Consultation",
+    "exploreFramework": "Explore Framework"
+  },
+  "Services": {
+    "hero": {
+      "sysLoc": "CORE_DC_01",
+      "latency": "14ms",
+      "status": "OPTIMAL",
+      "manifest": "VIXION_SERVICE_MANIFEST",
+      "title": "Operational Transformation Pipeline",
+      "description": "We prepare your business, deploy intelligent systems, and continuously optimize them for performance, cost efficiency, and operational scale."
+    },
+    "heroStats": [
+      { "label": "Processes Automated", "value": "75%+" },
+      { "label": "Operational Efficiency", "value": "+30%" },
+      { "label": "Cost Reduction", "value": "-25%" }
+    ],
+    "features": [
+      {
+        "title": "Foundation first.",
+        "description": "Data, tools, and workflows mapped before automation touches production."
+      },
+      {
+        "title": "Deployment without friction.",
+        "description": "Modular AI systems attach to the operational nodes that create leverage."
+      },
+      {
+        "title": "Optimization by default.",
+        "description": "Monitoring, prompts, cost, and performance tuned as the business shifts."
+      }
+    ],
+    "serviceRail": [
+      {
+        "title": "AI Readiness",
+        "description": "A structured operating layer for data audits, tool audits, workflow mapping, and capture strategy."
+      },
+      {
+        "title": "Intelligence Systems",
+        "description": "Production agents for support, documents, knowledge retrieval, sales, and predictive operations."
+      }
+    ],
+    "capabilities": [
+      {
+        "icon": "database",
+        "title": "Data Audit",
+        "description": "Assess and structure your data foundation"
+      },
+      {
+        "icon": "hub",
+        "title": "Workflow Automation",
+        "description": "Connect systems and remove manual processes"
+      },
+      {
+        "icon": "psychology",
+        "title": "AI Agents",
+        "description": "Deploy agents for sales, support, and operations"
+      },
+      {
+        "icon": "description",
+        "title": "Document Intelligence",
+        "description": "Extract and structure data from documents"
+      },
+      {
+        "icon": "memory",
+        "title": "RAG Systems",
+        "description": "Enable AI to access your internal knowledge"
+      },
+      {
+        "icon": "trending_up",
+        "title": "Sales Systems",
+        "description": "Automate and optimize your pipeline"
+      },
+      {
+        "icon": "monitoring",
+        "title": "Monitoring",
+        "description": "Track performance and system behavior"
+      },
+      {
+        "icon": "savings",
+        "title": "Cost Optimization",
+        "description": "Reduce operational and infrastructure costs"
+      }
+    ],
+    "bottomCards": [
+      {
+        "title": "Scale With Confidence",
+        "description": "Plug automation into an operating model designed for African businesses that need durable growth.",
+        "command": "$ vixion scale --regional"
+      },
+      {
+        "title": "Vixion AI Ops",
+        "description": "Track live performance, improve prompts, and reduce operating cost from one control surface.",
+        "command": "$ vixion optimize --loop-active"
+      },
+      {
+        "title": "Secure Deployment",
+        "description": "Deploy hardened modules with observability, fallback behavior, and controlled system access.",
+        "command": "$ vixion deploy --secure"
+      }
+    ],
+    "cta": {
+      "button": "Start AI Readiness Audit",
+      "providers": "+ 16 providers"
+    },
+    "systemOverview": {
+      "label": "SYSTEM_OVERVIEW_V04",
+      "title": "System_Cohesion"
+    }
+  },
+  "Framework": {
+    "hero": {
+      "method": "DATA_FIRST",
+      "readiness": "VARIABLE",
+      "output": "AI_SYSTEM",
+      "label": "FRAMEWORK_CORE_01",
+      "title": "AI Readiness Framework",
+      "description": "AI doesn't fail because of models. It fails because companies are not structured for it. We transform fragmented operations into AI-ready systems."
+    },
+    "corePrinciple": {
+      "label": "CORE_PRINCIPLE",
+      "title": "No data -> No AI -> No automation",
+      "cards": [
+        "AI depends on accessible, structured data.",
+        "Most companies lack the foundation AI needs.",
+        "Automation without structure creates operational chaos."
+      ]
+    },
+    "dataCategories": [
+      { "title": "Operational Data", "description": "Databases, logs, APIs" },
+      {
+        "title": "Communication Data",
+        "description": "Emails, WhatsApp, meetings"
+      },
+      {
+        "title": "Knowledge Data",
+        "description": "Docs, reports, internal knowledge"
+      },
+      { "title": "Behavioral Data", "description": "User activity, analytics" },
+      {
+        "title": "Process Data",
+        "description": "Workflows, decisions, tickets"
+      }
+    ],
+    "dataSurface": {
+      "label": "DATA_SURFACE",
+      "title": "What Company Data Really Means",
+      "description": "Every company already produces data. The problem is that most of it is invisible, scattered, or unusable."
+    },
+    "maturityLevels": [
+      {
+        "level": "LEVEL_01",
+        "title": "No Digital Infrastructure",
+        "signals": [
+          "Runs on WhatsApp, paper, verbal processes",
+          "No structured data",
+          "No documentation"
+        ],
+        "goal": "Digitize and centralize information"
+      },
+      {
+        "level": "LEVEL_02",
+        "title": "Disconnected Systems",
+        "signals": [
+          "Uses tools but data is scattered",
+          "No integrations",
+          "Manual workflows everywhere"
+        ],
+        "goal": "Connect systems and standardize workflows"
+      },
+      {
+        "level": "LEVEL_03",
+        "title": "AI-Ready Organization",
+        "signals": [
+          "Structured data",
+          "Connected systems",
+          "Documented workflows",
+          "Ready for AI deployment"
+        ],
+        "goal": "Activate automation and AI systems"
+      }
+    ],
+    "maturity": {
+      "label": "MATURITY_INDEX",
+      "title": "AI Maturity Levels",
+      "description": "The goal is not to look advanced. The goal is to know exactly what must be fixed before AI is useful."
+    },
+    "method": {
+      "label": "VIXION_METHOD",
+      "title": "The Vixion Method",
+      "description": "A practical sequence for turning fragmented operations into AI-ready infrastructure."
+    },
+    "methodSteps": [
+      {
+        "step": "STEP_01",
+        "title": "Capture",
+        "points": [
+          "Record meetings, workflows, and decisions",
+          "Eliminate operational data loss",
+          "Make information accessible"
+        ]
+      },
+      {
+        "step": "STEP_02",
+        "title": "Structure",
+        "points": [
+          "Standardize formats",
+          "Introduce templates",
+          "Organize workflows"
+        ]
+      },
+      {
+        "step": "STEP_03",
+        "title": "Activate",
+        "points": [
+          "Build RAG pipelines",
+          "Deploy AI agents",
+          "Automate operations"
+        ]
+      }
+    ],
+    "dataLayer": {
+      "label": "UNIFIED_LAYER",
+      "title": "Unified Data Layer",
+      "description": "The framework converts business activity into information AI can retrieve, understand, and act on."
+    },
+    "unifiedLayer": [
+      {
+        "title": "Ingestion",
+        "description": "Pull data from the tools teams already use."
+      },
+      {
+        "title": "Embedding",
+        "description": "Convert information into AI-readable context."
+      },
+      {
+        "title": "Storage",
+        "description": "Keep knowledge searchable in vector databases."
+      }
+    ],
+    "stack": {
+      "label": "OPTIONAL_STACK",
+      "title": "Technical Stack"
+    },
+    "stackItems": [
+      { "layer": "Communication", "tools": "Slack / Discord" },
+      { "layer": "Data", "tools": "PostgreSQL / Supabase" },
+      { "layer": "Vector DB", "tools": "Pinecone / pgvector" },
+      { "layer": "Automation", "tools": "n8n / Make" }
+    ],
+    "cta": {
+      "label": "EXECUTION_BRIDGE",
+      "title": "From Framework to Execution",
+      "description": "This framework is not theory. It powers every system we build.",
+      "solutionsLink": "Explore Solutions",
+      "servicesLink": "View Services"
+    }
+  },
+  "Contact": {
+    "hero": {
+      "id": "VX-001/CONTACT",
+      "title": "ESTABLISH CONTACT // SECURE_LINE_INITIATED",
+      "description": "Architectural intelligence interface active. Submit technical specifications or terminal queries through the encrypted protocol below."
+    },
+    "form": {
+      "module": "INQUIRY_PROTOCOL",
+      "name": {
+        "label": "SYSTEM_NAME // IDENTIFIER",
+        "placeholder": "ENTER_NAME..."
+      },
+      "email": {
+        "label": "NEURAL_ID // EMAIL",
+        "placeholder": "ADDRESS@NODE.SYSTEM"
+      },
+      "message": {
+        "label": "TRANSMISSION_DATA // MESSAGE",
+        "placeholder": "INPUT_SPECIFICATIONS..."
+      },
+      "button": "INITIALIZE_TRANSMISSION"
+    },
+    "locations": {
+      "label": "01_NETWORK",
+      "title": "GLOBAL_NODE_NETWORK",
+      "nodes": [
+        {
+          "coords": "[40.7128° N, 74.0060° W]",
+          "title": "NEW YORK NODE",
+          "address": "601 W 26TH ST, NY 10001"
+        },
+        {
+          "coords": "[35.6762° N, 139.6503° E]",
+          "title": "TOKYO TERMINAL",
+          "address": "SHIBUYA DISTRICT, T3-92"
+        },
+        {
+          "coords": "[52.5200° N, 13.4050° E]",
+          "title": "BERLIN HUB",
+          "address": "MITTE COMPLEX B-14"
+        }
+      ]
+    },
+    "security": {
+      "label": "02_SECURITY",
+      "title": "SECURITY_PROTOCOLS",
+      "encryption": {
+        "label": "ENCRYPTION_STATUS",
+        "value": "ACTIVE"
+      },
+      "protocol": {
+        "label": "PROTOCOL",
+        "value": "AES-512_X"
+      },
+      "identity": {
+        "label": "IDENTITY_VERIFICATION",
+        "value": "MULTI_LAYERED"
+      }
+    },
+    "stats": {
+      "uptime": "SYSTEM_UPTIME",
+      "nodes": "ACTIVE_NODES",
+      "processing": "AI_PROCESSING",
+      "latency": "LATENCY",
+      "values": ["99.998%", "14,209", "OPTIMAL", "2.4ms"]
+    }
+  }
+}
