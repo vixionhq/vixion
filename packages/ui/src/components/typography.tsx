@@ -6,9 +6,15 @@ export interface DisplayProps extends HTMLAttributes<HTMLHeadingElement> {
 }
 
 const displayVariants = {
-  xl: "text-7xl font-bold tracking-tight leading-[1.1] -tracking-[0.02em]",
-  lg: "text-4xl font-semibold tracking-tight leading-[1.2] -tracking-[0.01em]",
-  md: "text-3xl font-medium tracking-tight leading-[1.3]",
+  xl: "text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] -tracking-[0.02em]",
+  lg: "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight leading-[1.2] -tracking-[0.01em]",
+  md: "text-xl sm:text-2xl lg:text-3xl font-medium tracking-tight leading-[1.3]",
+}
+
+const headlineVariants = {
+  lg: "text-xl sm:text-2xl lg:text-[32px] font-semibold tracking-tight leading-[1.2] -tracking-[0.01em]",
+  md: "text-lg sm:text-xl lg:text-[24px] font-medium tracking-tight leading-[1.3]",
+  sm: "text-base sm:text-lg lg:text-xl font-medium tracking-tight leading-[1.3]",
 }
 
 export const Display = forwardRef<HTMLHeadingElement, DisplayProps>(
@@ -32,12 +38,6 @@ Display.displayName = "Display"
 
 export interface HeadlineProps extends HTMLAttributes<HTMLHeadingElement> {
   size?: "lg" | "md" | "sm"
-}
-
-const headlineVariants = {
-  lg: "text-[32px] font-semibold tracking-tight leading-[1.2] -tracking-[0.01em]",
-  md: "text-[24px] font-medium tracking-tight leading-[1.3]",
-  sm: "text-xl font-medium tracking-tight leading-[1.3]",
 }
 
 export const Headline = forwardRef<HTMLHeadingElement, HeadlineProps>(
@@ -64,9 +64,9 @@ export interface BodyProps extends HTMLAttributes<HTMLParagraphElement> {
 }
 
 const bodyVariants = {
-  lg: "text-lg leading-[1.6]",
-  md: "text-base leading-[1.6]",
-  sm: "text-sm leading-[1.6]",
+  lg: "text-base sm:text-lg lg:text-lg leading-[1.6]",
+  md: "text-sm sm:text-base lg:text-base leading-[1.6]",
+  sm: "text-xs sm:text-sm lg:text-sm leading-[1.6]",
 }
 
 export const Body = forwardRef<HTMLParagraphElement, BodyProps>(
@@ -115,7 +115,7 @@ export const Large = forwardRef<HTMLSpanElement, LargeProps>(
     return (
       <span
         ref={ref}
-        className={cn("text-lg font-semibold rounded-none", className)}
+        className={cn("text-base sm:text-lg lg:text-lg font-semibold rounded-none", className)}
         {...props}
       >
         {children}
@@ -175,10 +175,10 @@ export const Technical = forwardRef<HTMLSpanElement, TechnicalProps>(
       <span
         ref={ref}
         className={cn(
-          "font-mono rounded-none",
+          "font-mono rounded-none uppercase",
           size === "default"
-            ? "text-[12px] leading-[1.4] tracking-[0.05em]"
-            : "text-[10px] leading-[1.4] tracking-[0.05em]",
+            ? "text-[10px] sm:text-[12px] leading-[1.4] tracking-[0.05em]"
+            : "text-[9px] sm:text-[10px] leading-[1.4] tracking-[0.05em]",
           className
         )}
         {...props}

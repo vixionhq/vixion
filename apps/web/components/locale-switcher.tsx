@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { cn } from "@vix/ui/lib/utils"
 import { locales } from "@/lib/locale-data"
+import { Button } from "@vix/ui/components"
 
 export interface LocaleSwitcherProps {
   locale: string
@@ -19,7 +20,8 @@ export function LocaleSwitcher({ locale, className }: LocaleSwitcherProps) {
 
   return (
     <div className={cn("relative", className)}>
-      <button
+      <Button
+        variant="ghost"
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
           "flex items-center gap-2 border border-white/30 px-3 py-1.5",
@@ -32,7 +34,7 @@ export function LocaleSwitcher({ locale, className }: LocaleSwitcherProps) {
       >
         <span className="font-bold">{locale.toUpperCase()}</span>
         <span className="text-[10px] opacity-70">{isOpen ? "▲" : "▼"}</span>
-      </button>
+      </Button>
 
       {isOpen && (
         <>

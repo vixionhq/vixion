@@ -103,6 +103,7 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale)
+
   return (
     <html
       lang={locale}
