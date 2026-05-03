@@ -58,7 +58,7 @@ export function MobileNav({ open, onOpenChange }: MenuButtonProps) {
             <div className="mt-4 border-t border-border pt-6">
               <Link
                 href={`/${locale}/get-started`}
-                className="block border border-white bg-white px-6 py-3 text-center font-display text-sm font-bold tracking-widest text-black uppercase transition-colors hover:bg-neutral-800 hover:text-white"
+                className="block border border-foreground bg-foreground px-6 py-3 text-center font-display text-sm font-bold tracking-widest text-background uppercase transition-colors hover:bg-muted-foreground hover:text-foreground"
               >
                 <DrawerClose asChild>
                   <span>{t.getStarted}</span>

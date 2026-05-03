@@ -29,7 +29,7 @@ export function ServiceCard({
     <div
       data-slot="service-card"
       className={cn(
-        "group flex cursor-crosshair flex-col justify-between bg-black p-8 transition-colors hover:bg-zinc-900",
+        "group transition-colors10 flex cursor-crosshair flex-col justify-between bg-background p-8 hover:bg-foreground/10",
         variant === "featured" && "md:col-span-2 md:row-span-2",
         className
       )}
@@ -42,14 +42,14 @@ export function ServiceCard({
               <span className="material-symbols-outlined text-4xl">
                 <HugeiconsIcon icon={icon} />
               </span>
-              <span className="font-mono text-[12px] leading-[1.4] tracking-[0.05em] text-zinc-500">
+              <span className="font-mono text-[12px] leading-[1.4] tracking-[0.05em] text-muted-foreground">
                 {id}
               </span>
             </div>
-            <h3 className="mb-2 font-display text-[32px] leading-[1.2] font-semibold -tracking-[0.01em] tracking-tight text-white">
+            <h3 className="mb-2 font-display text-[32px] leading-[1.2] font-semibold -tracking-[0.01em] tracking-tight uppercase">
               {title}
             </h3>
-            <p className="text-xs tracking-wider text-zinc-500 uppercase">
+            <p className="text-xs tracking-wider text-muted-foreground uppercase">
               {description}
             </p>
           </>
@@ -62,14 +62,14 @@ export function ServiceCard({
                 <span className="material-symbols-outlined text-4xl">
                   <HugeiconsIcon icon={icon} />
                 </span>
-                <span className="font-mono text-[12px] leading-[1.4] tracking-wider text-zinc-500">
+                <span className="font-mono text-[12px] leading-[1.4] tracking-wider text-muted-foreground">
                   {id}
                 </span>
               </div>
               <h3 className="mb-2 font-display text-[32px] leading-[1.2] font-semibold tracking-tight text-white">
                 {title}
               </h3>
-              <p className="max-w-sm text-xs tracking-wider text-wrap text-zinc-500 uppercase">
+              <p className="max-w-sm text-xs tracking-wider text-wrap text-muted-foreground uppercase">
                 {description}
               </p>
             </div>

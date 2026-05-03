@@ -200,7 +200,7 @@ export default async function Framework({
           </div>
           <div className="grid grid-cols-1 gap-px border-y bg-border md:grid-cols-3">
             {t.maturityLevels!.map((level: any) => (
-              <article key={level.level} className="bg-black p-8">
+              <article key={level.level} className="bg-background p-8">
                 <Technical className="mb-8 block text-muted-foreground/45">
                   {level.level}
                 </Technical>
@@ -299,13 +299,13 @@ export default async function Framework({
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href={`/${lang}/solutions`}
-              className="inline-flex h-12 items-center justify-center border border-black bg-black px-8 font-display text-sm font-bold tracking-widest text-white uppercase transition-[background-color,color,transform] duration-150 hover:bg-white hover:text-black focus-visible:ring-2 focus-visible:ring-black/50 focus-visible:outline-none active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100"
+              className="inline-flex h-12 items-center justify-center border border-foreground px-8 font-display text-sm font-bold tracking-widest text-background uppercase transition-[background-color,color,transform] duration-150 hover:bg-muted-foreground hover:text-foreground focus-visible:ring-2 focus-visible:ring-foreground/50 focus-visible:outline-none active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100"
             >
               {t.cta!.solutionsLink!}
             </Link>
             <Link
               href={`/${lang}/services`}
-              className="inline-flex h-12 items-center justify-center border border-black px-8 font-display text-sm font-bold tracking-widest text-black uppercase transition-[background-color,color,transform] duration-150 hover:bg-black hover:text-white focus-visible:ring-2 focus-visible:ring-black/50 focus-visible:outline-none active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100"
+              className="inline-flex h-12 items-center justify-center border border-foreground bg-background px-8 font-display text-sm font-bold tracking-widest text-foreground uppercase transition-[background-color,color,transform] duration-150 hover:bg-foreground hover:text-background focus-visible:ring-2 focus-visible:ring-foreground/50 focus-visible:outline-none active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100"
             >
               {t.cta!.servicesLink!}
             </Link>

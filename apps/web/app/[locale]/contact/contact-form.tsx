@@ -272,11 +272,7 @@ function SubmitButton({
   const { pending } = useFormStatus()
 
   return (
-    <Button
-      type="submit"
-      disabled={pending}
-      className="h-12 w-full hover:text-white"
-    >
+    <Button type="submit" disabled={pending} className="h-12 w-full">
       {pending ? pendingLabel : label}
     </Button>
   )

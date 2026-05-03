@@ -6,7 +6,6 @@ import {
   SolutionCard,
   FeatureItem,
   LogoCloud,
-  CTASection,
   Display,
   Headline,
   Technical,
@@ -24,6 +23,7 @@ import {
   solutionLogos,
   solutionStatsData,
 } from "@/lib/solutions-data"
+import { CTASection } from "@/components/cta-section"
 
 const messages = { en, fr }
 const baseUrl = "https://vixionhq.com"
@@ -89,13 +89,13 @@ export default async function Solutions({
         {/* Framing Statement */}
         <section className="border-b border-border bg-surface-container-low px-6 py-16 md:px-12">
           <div className="mx-auto max-w-4xl">
-            <Technical className="mb-4 block text-white/40 uppercase">
+            <Technical className="mb-4 block text-muted-foreground uppercase">
               SYS_INIT_01
             </Technical>
-            <Display size="lg" className="mb-6 text-white uppercase">
+            <Display size="lg" className="mb-6 text-foreground uppercase">
               {t.framing!.title!}
             </Display>
-            <Body className="max-w-2xl text-white/60">
+            <Body className="max-w-2xl text-muted-foreground">
               {t.framing!.description!}
             </Body>
           </div>
@@ -134,17 +134,20 @@ export default async function Solutions({
         </section>
 
         {/* Solution Grid */}
-        <section className="border-b border-border bg-black p-6 md:p-12">
+        <section className="border-b border-border bg-background p-6 md:p-12">
           <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
-              <Technical className="mb-3 block text-white/35 uppercase">
+              <Technical className="mb-3 block text-muted-foreground uppercase">
                 {t.grid!.label!}
               </Technical>
-              <Headline size="lg" className="max-w-xl text-white uppercase">
+              <Headline
+                size="lg"
+                className="max-w-xl text-foreground uppercase"
+              >
                 {t.grid!.title!}
               </Headline>
             </div>
-            <Body className="max-w-md text-white/50">
+            <Body className="max-w-md text-muted-foreground">
               {t.grid!.description!}
             </Body>
           </div>
@@ -176,7 +179,7 @@ export default async function Solutions({
           <Body className="mb-4 text-white/60">{t.bridge!.title!}</Body>
           <Link
             href={`/${lang}/services`}
-            className="font-label-caps inline-block border border-white/20 bg-white px-6 py-3 text-sm text-black uppercase transition-colors hover:bg-white/90"
+            className="font-label-caps inline-block border border-border bg-background px-6 py-3 text-sm text-foreground uppercase transition-colors hover:bg-background/90"
           >
             {t.bridge!.link!}
           </Link>
@@ -202,7 +205,7 @@ export default async function Solutions({
           title={common!.requestConsultation!}
           primaryButton={common!.requestConsultation!}
           secondaryButton={common!.exploreFramework!}
-          className="flex flex-col items-center border-b border-border bg-primary px-6 py-24 text-center text-primary-foreground"
+          className="flex flex-col items-center border-b border-border px-6 py-24 text-center"
         />
       </main>
 

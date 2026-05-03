@@ -40,12 +40,14 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL(baseUrl),
+    applicationName: "Vixion",
+    authors: [{ name: "Vixion" }],
     title: {
-      default: "Vixion",
+      default: "Vixion – AI & Automation for African Businesses",
       template: "%s | Vixion",
     },
     description:
-      "Vixion helps African businesses automate everything that slows them down. High-fidelity architectural intelligence built for the continent's unique industrial scale.",
+      "Vixion helps African businesses automate workflows, reduce manual operations, and scale using AI-powered solutions and custom software.",
     keywords: [
       "automation",
       "AI",
@@ -79,7 +81,7 @@ export async function generateMetadata({
       images: ["/og-image.png"],
     },
     alternates: {
-      canonical: `/${locale}`,
+      canonical: locale === "en" ? "/" : `/${locale}`,
       languages: {
         en: "/en",
         fr: "/fr",
@@ -116,13 +118,13 @@ export default async function LocaleLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-body-md bg-black text-on-surface selection:bg-white selection:text-black">
-        <NextIntlClientProvider>
-          <ThemeProvider>
+      <body className="dark font-body-md bg-background text-on-surface selection:bg-primary selection:text-primary-foreground">
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <NextIntlClientProvider>
             <Nav locale={locale} />
-            <main>{children}</main>
-          </ThemeProvider>
-        </NextIntlClientProvider>
+            <main className="dark">{children}</main>
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

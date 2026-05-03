@@ -4,7 +4,7 @@ import { BlueprintSection } from "@vix/ui/components"
 import { HeroStats } from "@vix/ui/components"
 import { ServicesGrid } from "@vix/ui/components"
 import { ProtocolBox } from "@vix/ui/components"
-import { CTASection } from "@vix/ui/components"
+import { CTASection } from "@/components/cta-section"
 import { GridContainer } from "@vix/ui/components"
 import en from "../../messages/en.json"
 import fr from "../../messages/fr.json"
@@ -21,8 +21,7 @@ const baseUrl = "https://vixionhq.com"
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string }
->
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
   const lang = locale === "en" ? "en" : "fr"
@@ -39,7 +38,11 @@ export async function generateMetadata({
   }
 }
 
-export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
   const { locale } = await params
   const lang = locale === "en" ? "en" : "fr"
   const msg = messages[lang]!.Home!
@@ -81,11 +84,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
         {/* Mission & Vision: African Context First */}
         <section className="grid grid-cols-1 divide-x-[0.5px] divide-border border-b-[0.5px] border-border md:grid-cols-2">
-          <div className="bg-black p-12 lg:p-24">
+          <div className="bg-background p-12 lg:p-24">
             <Technical className="mb-6 block text-muted-foreground">
               {"//"} {msg.mission.technicalLabel}
             </Technical>
-            <Display size="xl" className="mb-8 text-primary">
+            <Display size="xl" className="mb-8 text-primary uppercase">
               {msg.mission.title}
             </Display>
             <Body size="lg" className="space-y-6 text-secondary">
@@ -93,7 +96,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </Body>
           </div>
 
-          <div className="relative flex items-center justify-center overflow-hidden bg-black p-12">
+          <div className="relative flex items-center justify-center overflow-hidden bg-background p-12">
             <div className="pointer-events-none absolute inset-0 opacity-20">
               <div
                 className="h-full w-full"
@@ -104,7 +107,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 }}
               />
             </div>
-            <ProtocolBox title={msg.mission.protocolTitle} protocols={homeProtocols} />
+            <ProtocolBox
+              title={msg.mission.protocolTitle}
+              protocols={homeProtocols}
+            />
           </div>
         </section>
 

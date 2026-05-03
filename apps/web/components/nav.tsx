@@ -32,11 +32,11 @@ export function Nav({ locale = "fr" }: NavProps) {
 
   return (
     <>
-      <header className="fixed top-0 right-0 left-0 z-50 w-full max-w-full border-b border-white/20 bg-black px-6">
+      <header className="fixed top-0 right-0 left-0 z-50 w-full max-w-full border-b border-border bg-background px-6">
         <div className="container mx-auto flex h-16 items-center justify-between">
           <Link href={`/${locale}`} className="flex items-center justify-center">
             <BrandMark surface="dark" size="lg" />
-            <span className="-mr-1.5 h-8 font-display text-xl font-black tracking-[0.2em] text-white">
+            <span className="-mr-1.5 h-8 font-display text-xl font-black tracking-[0.2em] text-foreground">
               VIXION
             </span>
           </Link>
@@ -46,7 +46,7 @@ export function Nav({ locale = "fr" }: NavProps) {
               <Link
                 key={item.title}
                 href={`/${lang}${item.url}`}
-                className="cursor-crosshair py-1 font-display text-sm tracking-widest text-white uppercase transition-all duration-200 hover:bg-white hover:px-2 hover:text-black"
+                className="cursor-crosshair py-1 font-display text-sm tracking-widest text-foreground uppercase transition-all duration-200 hover:bg-foreground hover:px-2 hover:text-background"
               >
                 {t[item.title as keyof typeof t]}
               </Link>
@@ -58,7 +58,7 @@ export function Nav({ locale = "fr" }: NavProps) {
 
             <Link
               href="/get-started"
-              className="hidden border border-white bg-white px-6 py-2 font-display text-sm font-bold tracking-widest text-black uppercase transition-all duration-200 hover:bg-neutral-800 hover:text-white md:block"
+              className="hidden border border-foreground bg-foreground px-6 py-2 font-display text-sm font-bold tracking-widest text-background uppercase transition-all duration-200 hover:bg-muted-foreground hover:text-foreground md:block"
             >
               {t.getStarted}
             </Link>
@@ -136,7 +136,7 @@ export function Nav({ locale = "fr" }: NavProps) {
               <div className="mt-4 border-t border-border pt-6">
                 <Link
                   href={`/${lang}/get-started`}
-                  className="block border border-white bg-white px-6 py-3 text-center font-display text-sm font-bold tracking-widest text-black uppercase transition-colors hover:bg-neutral-800 hover:text-white"
+                  className="block border border-foreground bg-foreground px-6 py-3 text-center font-display text-sm font-bold tracking-widest text-background uppercase transition-colors hover:bg-muted-foreground hover:text-foreground"
                 >
                   <DrawerClose asChild>
                     <span>{t.getStarted}</span>

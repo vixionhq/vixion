@@ -14,12 +14,12 @@ export function Footer({ locale = "fr" }: FooterProps) {
   const t = messages[lang]!.Footer!
 
   return (
-    <footer className="border-t-[0.5px] border-border bg-black py-10">
+    <footer className="border-t-[0.5px] border-border bg-background py-10">
       <div className="container mx-auto flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="flex flex-col">
           <div className="flex items-center">
             <BrandMark surface="dark" size="lg" />
-            <span className="-mr-2 h-8 font-display text-lg font-black tracking-widest text-white">
+            <span className="-mr-2 h-8 font-display text-lg font-black tracking-widest text-foreground">
               VIXION
             </span>
           </div>

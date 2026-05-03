@@ -66,14 +66,14 @@ export default async function Services({
             <div className="mx-auto max-w-6xl">
               <Technical
                 size="sm"
-                className="mb-6 inline-block border border-white bg-white px-2 py-0.5 text-black"
+                className="mb-6 inline-block border border-border bg-background px-2 py-0.5 text-foreground"
               >
                 {t.hero!.manifest!}
               </Technical>
               <Display
                 id="services-hero-title"
                 size="xl"
-                className="mb-8 max-w-5xl leading-none font-black tracking-tighter text-balance text-white uppercase"
+                className="mb-8 max-w-5xl leading-none font-black tracking-tighter text-balance text-foreground uppercase"
               >
                 Operational
                 <br />
@@ -81,7 +81,7 @@ export default async function Services({
                 <br />
                 Pipeline
               </Display>
-              <Technical className="max-w-3xl font-mono text-lg text-pretty text-white/60">
+              <Technical className="max-w-3xl font-mono text-lg text-pretty text-muted-foreground">
                 {t.hero!.description!}
               </Technical>
             </div>
@@ -94,7 +94,7 @@ export default async function Services({
               <Card
                 key={stat.label}
                 variant="outline"
-                className="flex min-w-0 flex-col gap-1 border-none p-6 text-white"
+                className="flex min-w-0 flex-col gap-1 border-none p-6 text-foreground"
               >
                 <Technical size="sm" className="text-white/50 uppercase">
                   {stat.label}
@@ -125,10 +125,10 @@ export default async function Services({
                       : ""
                   }`}
                 >
-                  <h3 className="font-display text-xl font-bold text-balance text-white">
+                  <h3 className="font-display text-xl font-bold text-balance text-foreground">
                     {feature.title}
                   </h3>
-                  <p className="mt-1 max-w-sm text-xl leading-snug text-pretty text-white/70">
+                  <p className="mt-1 max-w-sm text-xl leading-snug text-pretty text-muted-foreground">
                     {feature.description}
                   </p>
                 </article>
@@ -140,12 +140,12 @@ export default async function Services({
                   <div className="space-y-10">
                     {t.serviceRail!.map((service: any) => (
                       <article key={service.title} className="min-w-0">
-                        <h3 className="font-display text-2xl font-bold text-balance text-white">
+                        <h3 className="font-display text-2xl font-bold text-balance text-foreground">
                           {service.title}
                         </h3>
                         <Body
                           size="md"
-                          className="mt-4 text-pretty text-white/65"
+                          className="mt-4 text-pretty text-muted-foreground"
                         >
                           {service.description}
                         </Body>
@@ -156,7 +156,7 @@ export default async function Services({
                   <Link
                     href="/contact"
                     type="button"
-                    className="mt-10 inline-flex h-10 w-full items-center justify-center bg-white px-6 font-display font-medium text-black transition-[background-color,transform] duration-150 hover:bg-white/90 focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black focus-visible:outline-none active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100"
+                    className="mt-10 inline-flex h-10 w-full items-center justify-center bg-primary px-6 font-display font-medium text-primary-foreground transition-[background-color,transform] duration-150 hover:bg-primary/90 focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none active:scale-[0.97] motion-reduce:transition-none motion-reduce:active:scale-100"
                   >
                     {t.cta!.button!}
                     <HugeiconsIcon icon={ArrowRight02Icon} className="ml-2" />
@@ -170,7 +170,7 @@ export default async function Services({
                       {["AI", "OCR", "RAG", "OPS"].map((label) => (
                         <span
                           key={label}
-                          className="inline-flex size-10 shrink-0 items-center justify-center rounded-full border border-white/15 bg-white/5 font-display text-xs font-bold text-white"
+                          className="inline-flex size-10 shrink-0 items-center justify-center rounded-full border border-border bg-surface-container-lowest font-display text-xs font-bold text-foreground"
                           translate="no"
                         >
                           {label}
@@ -185,7 +185,7 @@ export default async function Services({
 
                 <div className="min-w-0 font-mono">
                   <div className="flex min-h-[370px] items-center justify-center border-b border-white/10 p-6 md:p-12">
-                    <div className="w-full max-w-3xl overflow-hidden rounded-lg border border-white/15 bg-black shadow-[0_0_0_1px_rgba(255,255,255,0.03)]">
+                    <div className="w-full max-w-3xl overflow-hidden rounded-lg border border-border bg-background shadow-[0_0_0_1px_rgba(255,255,255,0.03)]">
                       <div className="flex min-w-0 items-center justify-between gap-4 border-b border-white/10 px-4 py-3">
                         <div
                           className="flex items-center gap-2"
@@ -199,10 +199,10 @@ export default async function Services({
                           vixion-manifest.ts
                         </Technical>
                         <div className="flex shrink-0 items-center gap-2">
-                          <Technical className="hidden text-white/70 sm:inline">
+                          <Technical className="hidden text-muted-foreground sm:inline">
                             Run it with
                           </Technical>
-                          <span className="rounded-md border border-white/15 px-2 py-1 font-display text-[11px] text-white">
+                          <span className="rounded-md border border-border px-2 py-1 font-display text-[11px] text-foreground">
                             AI Gateway
                           </span>
                         </div>
@@ -286,8 +286,8 @@ export default async function Services({
                           <Technical
                             className={`block break-words ${
                               index === 0
-                                ? "font-bold text-white"
-                                : "text-white/80"
+                                ? "font-bold text-foreground"
+                                : "text-muted-foreground"
                             }`}
                           >
                             {title}
@@ -295,7 +295,7 @@ export default async function Services({
                           {description && (
                             <Technical
                               size="sm"
-                              className="mt-1 block text-white/40"
+                              className="mt-1 block text-muted-foreground"
                             >
                               {description}
                             </Technical>
@@ -323,16 +323,16 @@ export default async function Services({
                   >
                     +
                   </span>
-                  <h3 className="font-display text-2xl font-bold text-balance text-white">
+                  <h3 className="font-display text-2xl font-bold text-balance text-foreground">
                     {card.title}
                   </h3>
                   <Body
                     size="md"
-                    className="mt-4 max-w-sm text-pretty text-white/65"
+                    className="mt-4 max-w-sm text-pretty text-muted-foreground"
                   >
                     {card.description}
                   </Body>
-                  <Technical className="mt-8 block rounded-md border border-white/15 px-4 py-3 text-white">
+                  <Technical className="mt-8 block rounded-md border border-border px-4 py-3 text-foreground">
                     {card.command}
                   </Technical>
                 </article>
@@ -347,16 +347,16 @@ export default async function Services({
         >
           <div
             aria-hidden="true"
-            className="absolute inset-0 z-10 bg-black/40"
+            className="absolute inset-0 z-10 bg-background/40"
           />
           <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center p-6">
-            <div className="border border-white bg-black/80 p-8 text-center backdrop-blur-sm md:p-12">
-              <Technical className="mb-4 block text-white">
+            <div className="border border-border bg-background/80 p-8 text-center backdrop-blur-sm md:p-12">
+              <Technical className="mb-4 block text-foreground">
                 {t.systemOverview!.label!}
               </Technical>
               <h2
                 id="system-cohesion-title"
-                className="font-display text-3xl font-black tracking-[0.35em] break-words text-white uppercase md:text-5xl md:tracking-[0.5em]"
+                className="font-display text-3xl font-black tracking-[0.35em] break-words text-foreground uppercase md:text-5xl md:tracking-[0.5em]"
               >
                 {t.systemOverview!.title!}
               </h2>

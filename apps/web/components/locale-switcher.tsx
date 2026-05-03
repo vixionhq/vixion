@@ -41,22 +41,11 @@ export function LocaleSwitcher({ locale, className }: LocaleSwitcherProps) {
 
   return (
     <Select value={locale} onValueChange={onValueChange} disabled={isPending}>
-      <SelectTrigger
-        className={cn(
-          "h-auto w-auto border border-white/30 px-3 py-1.5",
-          "font-display text-xs tracking-widest text-white uppercase",
-          "transition-all duration-200",
-          "hover:border-white hover:bg-white hover:text-black",
-          "focus-visible:ring-0 focus-visible:ring-offset-0",
-          "data-placeholder:text-white",
-          className
-        )}
-        aria-label="Switch language"
-      >
+      <SelectTrigger className="uppercase" aria-label="Switch language">
         <SelectValue />
       </SelectTrigger>
       <SelectContent
-        className="max-w-[140px] border border-white/20 bg-black text-white"
+        className="max-w-[140px] border border-border bg-background text-foreground"
         sideOffset={4}
         align="end"
       >
@@ -66,14 +55,14 @@ export function LocaleSwitcher({ locale, className }: LocaleSwitcherProps) {
             value={loc.code}
             className={cn(
               "font-display text-xs tracking-widest uppercase",
-              "focus:bg-white focus:text-black",
-              "data-[highlighted]:bg-white data-[highlighted]:text-black",
-              idx > 0 && "border-t border-white/10",
-              loc.code === locale && "bg-white/10 font-bold"
+              "focus:bg-foreground focus:text-background",
+              "data-[highlighted]:bg-foreground data-[highlighted]:text-background",
+              idx > 0 && "border-t border-border",
+              loc.code === locale && "bg-foreground/10 font-bold"
             )}
           >
             <span className="mr-2">{loc.code.toUpperCase()}</span>
-            <span className="text-white/50">{loc.name}</span>
+            <span className="text-muted-foreground">{loc.name}</span>
           </SelectItem>
         ))}
       </SelectContent>

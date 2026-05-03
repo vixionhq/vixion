@@ -1,6 +1,7 @@
 import * as React from "react"
 import { cn } from "@vix/ui/lib"
-import { Technical, Display, Headline, Button } from "."
+import { Technical, Display, Button } from "@vix/ui/components"
+import Link from "next/link"
 
 export interface CTASectionProps {
   technicalLabel?: string
@@ -43,12 +44,12 @@ export function CTASection({
       <div className="flex flex-col gap-4 md:flex-row">
         {primaryButton && (
           <Button variant="default" size="xl">
-            {primaryButton}
+            <Link href={"/contact"}>{primaryButton}</Link>
           </Button>
         )}
         {secondaryButton && (
           <Button variant="outline" size="xl">
-            {secondaryButton}
+            <Link href={"/framework"}>{secondaryButton}</Link>
           </Button>
         )}
       </div>
