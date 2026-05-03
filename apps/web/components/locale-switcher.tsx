@@ -1,69 +1,82 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { useState } from "react"
-import { cn } from "@vix/ui/lib/utils"
+import { useTransition } from "react"
+import { useRouter, usePathname } from "next/navigation"
+import {
+  Select,
+  SelectTrigger,
+  SelectContent,
+  SelectItem,
+  SelectValue,
+} from "@vix/ui/primitives/select"
 import { locales } from "@/lib/locale-data"
-import { Button } from "@vix/ui/components"
+import { cn } from "@vix/ui/lib/utils"
 
-export interface LocaleSwitcherProps {
+interface LocaleSwitcherProps {
   locale: string
   className?: string
 }
 
 export function LocaleSwitcher({ locale, className }: LocaleSwitcherProps) {
-  const [isOpen, setIsOpen] = useState(false)
+  const router = useRouter()
   const pathname = usePathname()
+  const [isPending, startTransition] = useTransition()
 
   const currentPage = pathname?.replace(`/${locale}`, "") || ""
 
+  function onValueChange(value: string | null) {
+    if (!value) return
+    const newLocale = value
+    const newPath =
+      newLocale === "en"
+        ? `/en${currentPage}`
+        : currentPage === ""
+          ? `/${newLocale}`
+          : `/fr${currentPage}`
+
+    startTransition(() => {
+      router.replace(newPath)
+    })
+  }
+
   return (
-    <div className={cn("relative", className)}>
-      <Button
-        variant="ghost"
-        onClick={() => setIsOpen(!isOpen)}
+    <Select value={locale} onValueChange={onValueChange} disabled={isPending}>
+      <SelectTrigger
         className={cn(
-          "flex items-center gap-2 border border-white/30 px-3 py-1.5",
+          "h-auto w-auto border border-white/30 px-3 py-1.5",
           "font-display text-xs tracking-widest text-white uppercase",
           "transition-all duration-200",
-          "hover:border-white hover:bg-white hover:text-black"
+          "hover:border-white hover:bg-white hover:text-black",
+          "focus-visible:ring-0 focus-visible:ring-offset-0",
+          "data-placeholder:text-white",
+          className
         )}
-        aria-expanded={isOpen}
         aria-label="Switch language"
       >
-        <span className="font-bold">{locale.toUpperCase()}</span>
-        <span className="text-[10px] opacity-70">{isOpen ? "▲" : "▼"}</span>
-      </Button>
-
-      {isOpen && (
-        <>
-          <div
-            className="fixed inset-0 z-40"
-            onClick={() => setIsOpen(false)}
-          />
-          <div className="absolute top-full right-0 z-50 mt-1 min-w-[140px] border border-white/20 bg-black">
-            {locales.map((loc, idx) => (
-              <Link
-                key={loc.code}
-                href={
-                  loc.code === "en" ? `/en${currentPage}` : `/fr${currentPage}`
-                }
-                className={cn(
-                  "flex items-center justify-between px-3 py-2",
-                  "font-display text-xs tracking-widest text-white uppercase",
-                  "transition-colors hover:bg-white hover:text-black",
-                  idx > 0 && "border-t border-white/10"
-                )}
-                onClick={() => setIsOpen(false)}
-              >
-                <span>{loc.code.toUpperCase()}</span>
-                <span className="text-[10px] text-white/50">{loc.name}</span>
-              </Link>
-            ))}
-          </div>
-        </>
-      )}
-    </div>
+        <SelectValue />
+      </SelectTrigger>
+      <SelectContent
+        className="max-w-[140px] border border-white/20 bg-black text-white"
+        sideOffset={4}
+        align="end"
+      >
+        {locales.map((loc, idx) => (
+          <SelectItem
+            key={loc.code}
+            value={loc.code}
+            className={cn(
+              "font-display text-xs tracking-widest uppercase",
+              "focus:bg-white focus:text-black",
+              "data-[highlighted]:bg-white data-[highlighted]:text-black",
+              idx > 0 && "border-t border-white/10",
+              loc.code === locale && "bg-white/10 font-bold"
+            )}
+          >
+            <span className="mr-2">{loc.code.toUpperCase()}</span>
+            <span className="text-white/50">{loc.name}</span>
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
   )
 }
